@@ -37,13 +37,12 @@ string calculateAverage(int numamt){
     vector<int> numbers;
     int input;
     for(;numamt>0;numamt--){
-    vector<int> numbers;
     cout<<"Enter Num: ";
     cin>>input;
     cout<<endl;
     numbers.push_back(input);
     }
-    int avg=(accumulate(numbers.begin(), numbers.end(), 0))/numbers.size();
+   
     
-    return //"Avg: " + to_string(avg);
+    return "Avg: " + to_string((accumulate(numbers.begin(), numbers.end(), 0))/numbers.size());
 }
